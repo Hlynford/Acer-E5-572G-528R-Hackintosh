@@ -10,7 +10,7 @@
 | -------- | -------------------------------------------- |
 | 电脑型号 | 宏基E5-572G-528R                             |
 | 处理器   | 英特尔 酷睿 i5-4210M                         |
-| 硬盘     | SanDisk SATA 240G SSD + Seagate 2T           |
+| 硬盘     | SanDisk SATA 240G SSD + Seagate 2T HDD         |
 | 显卡     | Intel HD Graphics 4600 / Nvidia GeForce 840M |
 | 内存     | 16 GB LPDDR3                                 |
 | 显示器   | 15.6 英寸 FHD 1920x1080                      |
