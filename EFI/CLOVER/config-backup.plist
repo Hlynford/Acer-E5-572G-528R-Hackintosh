@@ -214,8 +214,6 @@
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
-			<key>SlpSmiAtWake</key>
-			<false/>
 		</dict>
 		<key>DisableASPM</key>
 		<false/>
@@ -316,14 +314,12 @@
 		<string>LastBootedVolume</string>
 		<key>DisableCloverHotkeys</key>
 		<false/>
-		<key>HibernationFixup</key>
-		<true/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverDoRecovery</key>
 		<true/>
 		<key>NeverHibernate</key>
-		<false/>
+		<true/>
 		<key>RtcHibernateAware</key>
 		<false/>
 		<key>SignatureFixup</key>
@@ -562,7 +558,7 @@
 			<key>AFGLowPowerState</key>
 			<true/>
 			<key>Inject</key>
-			<integer>15</integer>
+			<integer>3</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -572,6 +568,32 @@
 		<false/>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x11,0x0)/Pci(0x1,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,17,0/1,0</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
+				<data>AAAAAA==</data>
+				<key>model</key>
+				<string>HD Audio Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,27,0</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
+				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>8 Series/C220 Series Chipset High Definition Audio Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -586,24 +608,6 @@
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con2-index</key>
-				<data>/////w==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-portcount</key>
-				<data>AgAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -794,7 +798,7 @@
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>1280x1024</string>
+		<string>1024x768</string>
 		<key>ShowOptimus</key>
 		<false/>
 		<key>Theme</key>
@@ -1037,33 +1041,6 @@
 		</array>
 		<key>KernelXCPM</key>
 		<false/>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>QVBQTEUgU1NEAA==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>AAAAAAAAAAAAAA==</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>AQMDAwAAAAIAADABAABgAAAAAGA=</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>AQMDAwAAAAIAADABAACQAAAAAIA=</data>
-			</dict>
-		</array>
 		<key>PanicNoKextDump</key>
 		<true/>
 	</dict>
